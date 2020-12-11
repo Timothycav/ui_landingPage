@@ -156,12 +156,12 @@ img {
 /* New NavBar*/
 .navbar2 {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: #333;
 	height: 70px;
 }
 .navbar2 ul {
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
 	list-style-type: none;
 }
 
@@ -173,14 +173,39 @@ img {
 	text-decoration: none;
 }
 .navbar2 a:hover {
-	color: var(--dark-color);
+	color: #fff;
 }
 .navbar2 p {
 	color: #333;
 	padding: 4px;
 	margin: 4px;
 }
-
+.button {
+	background: var(--dark-color);
+	color: #fff;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+.button:hover {
+	color: #fff;
+	transform: scale(0.88);
+}
+.btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+.btn-outline {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+.btn:hover {
+	transform: scale(0.88);
+	color: #fff;
+}
 .EandM {
 	height: 50%;
 }
@@ -194,7 +219,10 @@ li:hover {
 }
 .dropdown {
 	padding: 2px;
-	width: 500px;
+}
+.dropdown h2,
+h4 {
+	color: #333;
 }
 ul li ul {
 	visibility: hidden;
@@ -226,60 +254,15 @@ ul li ul li {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
-
-/* Grid Nav */
-.grid_nav {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-auto-rows: auto;
-	grid-gap: 1em;
-	align-items: center;
-	text-align: center;
-	border-bottom: 4px solid black;
-	background: green;
+.nav-link {
+	font-size: 1.4rem;
+	color: #333;
 }
-@media screen and (max-width: 900px) {
-	nav {
-		grid-template-columns: 100%;
-		grid-template-rows: auto;
-		grid-gap: 1em;
-	}
+.nav-link:hover {
+	color: #171828;
+	border-bottom: solid #fff 3px;
 }
 
-.one {
-	grid-column: 1;
-}
-
-.two {
-	grid-column: 2;
-}
-
-.three {
-	grid-column: 4;
-}
-
-.four {
-	grid-column: 5;
-}
-
-.navLinks {
-	font-family: "Ubuntu", sans-serif;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: black;
-}
-
-.navLinks:hover {
-	color: white;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-	padding: 1em 1em;
-}
-
-#twist {
-	color: blue;
-}
 /* Text sizes */
 .lead {
 	font-size: 20px;

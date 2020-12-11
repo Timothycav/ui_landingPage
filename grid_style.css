@@ -16,6 +16,8 @@
 
 body {
 	margin: 0;
+	background-color: #a49cba;
+	overflow: hidden;
 }
 
 nav {
@@ -122,6 +124,7 @@ ul li ul li {
 	margin-right: 20px;
 	margin-top: 15px;
 	border: solid black 1px;
+	background-color: #a49cba;
 }
 
 #contact_info p {
@@ -147,6 +150,13 @@ ul li ul li {
 
 .twobox {
 	grid-column: 2;
+}
+
+.main {
+	height: 600px;
+}
+.main_text {
+	margin-top: 100px;
 }
 /* Text sizes */
 .lead {
