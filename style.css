@@ -260,9 +260,24 @@ ul li ul li {
 }
 .nav-link:hover {
 	color: #171828;
-	border-bottom: solid #fff 3px;
 }
 
+.drop_wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: auto;
+}
+.drop_one {
+	grid-column: 1;
+}
+.drop_two {
+	grid-column: 2;
+}
+
+ul > li:last-child ul {
+	right: 12px;
+	left: auto;
+}
 /* Text sizes */
 .lead {
 	font-size: 20px;
