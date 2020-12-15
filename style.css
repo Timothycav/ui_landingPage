@@ -249,6 +249,10 @@ ul li ul li {
 	clear: both;
 	width: 100%;
 }
+ul > li:last-child ul {
+	right: 4px;
+	left: auto;
+}
 
 .one {
 	display: grid;
@@ -274,10 +278,6 @@ ul li ul li {
 	grid-column: 2;
 }
 
-ul > li:last-child ul {
-	right: 12px;
-	left: auto;
-}
 /* Text sizes */
 .lead {
 	font-size: 20px;
