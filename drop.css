@@ -46,7 +46,9 @@ ul li ul li {
 	margin: 0;
 	text-align: left;
 }
-
+.port_ul:hover {
+	background: #667;
+}
 ul li ul li:hover {
 	background: #667;
 }
@@ -78,7 +80,10 @@ ul li:hover ul {
 .list_p {
 	font-weight: 200;
 }
-
+.side_li:hover {
+	background: #fff;
+	color: #333;
+}
 .btn {
 	padding: 10px 30px;
 	cursor: pointer;
